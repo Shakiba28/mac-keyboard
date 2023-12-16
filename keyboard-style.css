@@ -1,0 +1,203 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.desktop-container {
+    max-width: 988px;
+    padding: 1rem;
+    margin: 60px auto;
+    background-color: #a6a8a3;
+    border-radius: .5rem;
+}
+
+.key {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    line-height: 29px;
+    border-radius: .25rem;
+    float: left;
+    margin-left: .25rem;
+    margin-bottom: .25rem;
+}
+
+.key.letter {
+    line-height: 3.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.hyphen {
+    color: #000;
+    line-height: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    bottom: .5rem;
+}
+.delete,
+.tab {
+    width: 6rem;
+    text-align: left;
+}
+
+.delete {
+    text-align: right;
+    width: 5.5rem;
+}
+
+.caps {
+    width: 7.75rem;
+}
+
+.left-style {
+    text-align: left;
+    padding-left: .85rem;
+}
+
+.right-style {
+    text-align: right;
+    padding-right: .85rem;
+}
+
+.enter {
+    width: 6.5rem;
+    padding-left: 0;
+}
+
+.shift.left {
+    width: 10rem;
+    font-size: 13px;
+}
+
+.shift.right {
+    width: 8.85rem;
+    font-size: 13px;
+}
+
+.ctrl {
+    padding: 0 .5rem;
+}
+
+.space {
+    width: 24.5rem;
+}
+
+.arrows {
+    display: flex;
+}
+
+.arrows .key {
+    font-size: .75rem;
+}
+.arrow-t {
+    margin-bottom: 1px;
+    border-radius: .25rem .25rem 0 0;
+}
+
+.arrow-b {
+    border-radius: 0 0 .25rem .25rem;
+
+}
+
+.arrow-t,
+.arrow-b {
+    height: 2rem;
+}
+
+.arrow-y {
+    display: flex;
+    flex-direction: column;
+}
+
+.key.letter.arrow {
+    width: 3.65rem;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    display: flex;
+}
+
+.command {
+    width: 5rem;
+    padding: 0 .5rem;
+}
+.mobile-container {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .desktop-container {
+        display: none;
+    }
+
+    .mobile-container {
+        display: block;
+        max-width: 361px;
+        padding: 1rem .25rem;
+        margin: 60px auto;
+        background-color: #6e6f69;
+        border-radius: .5rem;
+    }
+
+    .m-row1,
+    .m-row2,
+    .m-row3,
+    .m-row4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .m-key {
+        width: 2rem;
+        height: 2.5rem;
+        display: block;
+        background-color: #a2a0a3;
+        color: #fff;
+        text-align: center;
+        line-height: 2.25rem;
+        border-radius: .5rem;
+        float: left;
+        margin-left: .25rem;
+        margin-bottom: .25rem;
+    }
+
+    .m-key.m-letter {
+        font-size: 1.25rem;
+        text-transform: lowercase;
+    }
+
+    .m-space {
+        width: 11.25rem;
+    }
+
+    .m-color {
+        background-color: #8d8d8b;
+        width: 2.75rem;
+    }
+
+    .m-return {
+        width: 5.45rem;
+    }
+
+    .m-capitaliz {
+        margin-right: .5rem;
+        font-weight: bold;
+        font-size: 1.75rem;
+    }
+
+    .m-delete {
+        margin-left: .5rem;
+    }
+
+    .m-emoji {
+        font-size: 1.5rem;
+    }
+}
